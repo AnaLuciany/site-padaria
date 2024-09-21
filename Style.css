@@ -1,0 +1,17 @@
+body{
+  margin: o;
+  background-color: rgb(255, 242, 207);
+}
+header{
+   display: flex;
+  padding-left: 150px ;
+align-items:center
+justify-countent: space-between
+  background-color: rgb(187, 165, 139);
+  padding-right: 150px ;
+
+}
+.logo-header{
+  width: 25%;
+}
+  
