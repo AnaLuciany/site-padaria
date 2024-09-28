@@ -1,17 +1,101 @@
-body{
-  margin: o;
-  background-color: rgb(255, 242, 207);
-}
-header{
-   display: flex;
-  padding-left: 150px ;
-align-items:center
-justify-countent: space-between
-  background-color: rgb(187, 165, 139);
-  padding-right: 150px ;
+body {
 
+  margin: o;
+  background-color: rgb(255, 247, 220);
+  font-family: "Open Sans", sans-serif;
 }
-.logo-header{
+
+html{
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: rgb(255, 242, 218);
+  align-items: center justify-countent;
+  justify-content: space-between
+}
+
+.logo-header {
   width: 25%;
 }
-  
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+.menu li a {
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#introducao{
+  display: flex;
+  height: 250px;
+  align-items: center;
+
+}
+
+#introducao div {
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+}
+
+
+#sobre-nos{
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(243, 232, 211);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+
+}
+
+#produtos{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#produtos h2{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.conteudo-produtos{ 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  font-size: 20px;
+}
+
+.produto{
+  width: 200px;
+  text-align: center;
+}
+
+.direitos-autorais{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+footer{
+  background-color: black;
+  color: aliceblue;
+  margin: 0;
+  text-align: center;
+  padding-top: 25px;
+}
+footer p{
+  margin: 0;
+}

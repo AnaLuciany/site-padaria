@@ -4,92 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pão na chapa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="Ing/logo.png" type="image/x-icon">
-    
-</head> 
+</head>
 
 <body>
-   
-        <header> 
-         
-   <img src="logo-header" alt="" srcset="">
-           <img src="Ing/logo.png" alt="Pães na chapa, pão baguetes, bolos quante " />
-            <nav>
-                <ul>
-                    <li>
-                        <a>Inicio</a>
-                    </li>
 
-                    <li>
-                        <a>sobre</a>
-                    </li>
+    <header>
+        <img src="logo-header" alt="" srcset="">
+        <img src="Ing/logo.png" alt="Pães na chapa, pão baguetes, bolos quante " />
+        <nav class="menu">
+            <ul>
+                <!-- Adicionar Href nos a -->
+                <li><a href="#introducao">Inicio</a></li>
+                <li><a href="#sobre-nos">sobre</a></li>
+                <li> <a href="#produtos">produtos</a>
+                <li> <a href="#contato">contato</a></li>
 
-                    <li>
-                        <a>produtos</a>
-                    <li>
-                        <a>contato</a>
-                    </li>
-                </ul>
+            </ul>
 
-            </nav>
+        </nav>
 
-        </header>
-        <main>
+    </header>
+    <main>
 
-        <section>
-            <h2>bem vindo a padaria Pão na chapa</h2>
-            <p>Na padaria pão na chapa, oferecemos o melhor pão caseiro fresco e de qualidade.
-                Aqui você encontra o pão de melhor qualidade e macio por dentro,
-                além de uma variedade deliciosa de produtos!
-            </p>
-        </section>
-        <sectin>
-            <h2>sobre nós</h2>
-            <p> fundada em 1990, a padaria pão na chapa é refrencia na região pela qualidede do nossos pães e
-                atendimento.
-                Objetivos e proporcionar uma experiencia acolhedora e saborosa para todos os nossos clientes,
-                seja para aquele cafe da manhã especial ou para o lanche da tarde </p>
-        </sectin>
-        <section>
-            <h2>Nossos Produtos</h2>
+        <section id="introducao">
             <div>
-
-                <div>
-                    <h3>Pães</h3>
-                    <P>Temos uma variedade de pães, como pão fracês pão de froma, baguetes e muito mais.
-
-
-                </div>
+                <h2>bem vindo a padaria Pão na chapa</h2>
+                <p>Na padaria pão na chapa, oferecemos o melhor pão caseiro fresco e de qualidade.
+                    Aqui você encontra o pão de melhor qualidade e macio por dentro,
+                    além de uma variedade deliciosa de produtos!
                 </p>
-                <div>
+            </div>
+
+            <div>
+                <img width="300px" src="./Ing/pao.png" alt="Pão, cesta de pães" />
+            </div>
+        </section>
+
+
+        <section id="sobre-nos">
+            <h2>sobre nós</h2>
+           
+                <p>
+                    fundada em 1990, a padaria pão na chapa é refrencia na região pela qualidede
+                    do nossos pães e atendimento.
+                    Objetivos e proporcionar uma experiencia acolhedora e saborosa para todos os nossos clientes,
+                    seja para aquele cafe da manhã especial ou para o lanche da tarde 
+                </p>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <div class="conteudo-produtos">
+                <div class="produto">
+                    <h3>Pães</h3>
+                    <P>Temos uma variedade de pães, como pão fracês pão de froma, baguetes e muito mais.</P>
+                </div>
+
+                <div class="produto">
                     <h3>Bolos</h3>
-                    <P>Oferecemos bolos fesquinho, tortas e uma seleção de doces como sonhos,
-                        brigdeiros e browinies.</P>
+                    <P>Oferecemos bolos fesquinho, tortas e uma seleção de doces como sonhos, rigdeiros e browinies.</P>
                 </div>
-                <div>
+
+                <div class="produto">
                     <h3>Salgados</h3>
-                    <p>seja para um lanche rápido 0ou uma festa, mossos Salgados
-                        são fritos na hora,com opções como coxinhas, risoles esfinhas
-                        ]e mutop mais.
-                    </p>
+                    <p>seja para um lanche rápido ou uma festa, mossos Salgados são fritos na hora,com opções como coxinhas, risoles esfinhase mutop mais. </p>
                 </div>
-
-
             </div>
         </section>
     </main>
-        <footer>
 
-            <section>
-                <h2>Contato</h2>
-                <p>Email: cotato@paonachapa.com</p>
-                <p>Telefone: (11) 1234 - 5678 </p>
-                <p>Enedereço: Rua do Pão, 123 - cento - são paulo </p>
-            </section>
-<P>&copy; 2024 - Padaria Pão na chapa - 
-    Todos direitos resevados</P>
-        </footer>
+    <footer>
+        <section id="contato"> 
+            <h2>Contato</h2>
+            <p>Email: cotato@paonachapa.com</p>
+            <p>Telefone: (11) 1234 - 5678 </p>
+            <p>Enedereço: Rua do Pão, 123 - cento - são paulo </p>
+        </section>
+        <P class="direitos-autorais">  &copy; 2024 - Padaria Pão na chapa - Todos direitos resevados</P>
+    </footer>
 
 </body>
 
