@@ -6,7 +6,7 @@
     <title>Pão na chapa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon">
 </head>
@@ -48,13 +48,13 @@
 
         <section id="sobre-nos">
             <h2>sobre nós</h2>
-           
-                <p>
-                    fundada em 1990, a padaria pão na chapa é refrencia na região pela qualidede
-                    do nossos pães e atendimento.
-                    Objetivos e proporcionar uma experiencia acolhedora e saborosa para todos os nossos clientes,
-                    seja para aquele cafe da manhã especial ou para o lanche da tarde 
-                </p>
+
+            <p>
+                fundada em 1990, a padaria pão na chapa é refrencia na região pela qualidede
+                do nossos pães e atendimento.
+                Objetivos e proporcionar uma experiencia acolhedora e saborosa para todos os nossos clientes,
+                seja para aquele cafe da manhã especial ou para o lanche da tarde
+            </p>
         </section>
 
         <section id="produtos">
@@ -73,22 +73,66 @@
 
                 <div class="produto">
                     <h3>Salgados</h3>
-                    <p>seja para um lanche rápido ou uma festa, mossos Salgados são fritos na hora,com opções como coxinhas, risoles esfinhase mutop mais. </p>
+                    <p>seja para um lanche rápido ou uma festa, mossos Salgados são fritos na hora,com opções como
+                        coxinhas, risoles esfinhase mutop mais. </p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <section id="contato"> 
-            <h2>Contato</h2>
-            <p>Email: cotato@paonachapa.com</p>
-            <p>Telefone: (11) 1234 - 5678 </p>
-            <p>Enedereço: Rua do Pão, 123 - cento - são paulo </p>
-        </section>
-        <P class="direitos-autorais">  &copy; 2024 - Padaria Pão na chapa - Todos direitos resevados</P>
-    </footer>
+        <section id="contato">
 
+            <h2>Fale conosco</h2>
+            <p>Entre em contato conosco, preenchendo o formulario abaixo.</p>
+            <form id="form-contato">
+                <div class="grupo">
+                    <p>nome:</p>
+                    <input id="nome" type="text" placeholder="digite seu nome completo" required />
+                    <div>
+
+                        <div class="grupo">
+                            <p>Email:</p>
+                            <input id="email" type="email" placeholder="digite seu Email" required />
+                            <div>
+
+                                <div class="grupo">
+                                    <p>Telefone:</p>
+                                    <input id="telefone" type="tel" placeholder="digite seu telefone" required />
+                                    <div>
+
+                                        <div class="grupo">
+                                            <p>Mensagem</p>
+                                            <textarea id="mensagem" placeholder="Digite sua mensagem" rows="5" cols="50"
+                                                required></textarea>
+
+                                        </div>
+                                        <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+        <P class="direitos-autorais"> &copy; 2024 - Padaria Pão na chapa - Todos direitos resevados</P>
+    </footer>
+    <script>
+        const form = document.getElementById("form-contato");
+        form.addEventListener('subimit', function (event){
+            event.preventDefault();
+            const nome= document.getElementById('nome').value;
+            const Email= document.getElementById('email').value;
+            const Telefone= document.getElementById('telefone').value;
+            const mensagem= document.getElementById('mensagem').value;
+
+            alert("Dados do conatato: /n" +
+            "nome:" + nome + "/n" +
+            "Email" + Email + "/n" +
+            "telefone" + telefone + "/n" +
+            "mensagem" + mensagem 
+        );
+
+
+        })
+
+
+    </script>
 </body>
 
 </html>
